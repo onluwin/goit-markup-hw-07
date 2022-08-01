@@ -2,24 +2,19 @@
     background: #2f303a;
     height: 252px;
 }
-
 .footer-container {
-    height: 252px;
     display: flex;
 }
-
 .footer-content {
     height: 132px;
     width: 231px;
     margin-right: 70px;
     padding-top: 50px;
 }
-
-.footer-contacts {
+.address__contacts {
     padding-bottom: 60px;
 }
-
-.footer-logo {
+.footer-content__logo {
     display: block;
     font-family: "Raleway";
     font-style: normal;
@@ -32,13 +27,14 @@
     width: 145px;
     height: 31px;
 }
-
+.footer-content__logo-styles {
+    color: var(--accent-color);
+}
 .address {
     width: 231px;
     height: 81px;
 }
-
-.footer-link {
+.address__link {
     display: block;
     font-family: "Roboto";
     font-style: normal;
@@ -49,8 +45,7 @@
     color: var(--btntext-hover);
     margin-bottom: 9px;
 }
-
-.footer-mail {
+.address__mail {
     display: block;
     font-family: "Roboto";
     font-style: normal;
@@ -63,14 +58,12 @@
     height: 21px;
     margin-bottom: 9px;
 }
-
-.footer-mail:hover,
-.footer-mail:focus {
+.address__mail:hover,
+.address__mail:focus {
     color: var(--accent-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-tel {
+.address__tel {
     display: block;
     font-family: "Roboto";
     font-style: normal;
@@ -82,21 +75,18 @@
     width: 231px;
     height: 21px;
 }
-
-.footer-tel:hover,
-.footer-tel:focus {
+.address__tel:hover,
+.address__tel:focus {
     color: var(--accent-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer-social {
     padding-top: 60px;
     width: 206px;
     height: 80px;
     margin-right: 93px;
 }
-
-.footer-social-title {
+.footer-social__title {
     margin: 0;
     margin-bottom: 20px;
     font-family: "Roboto";
@@ -108,16 +98,13 @@
     text-transform: uppercase;
     color: var(--btntext-hover);
 }
-
-.footer-soc-list {
+.social {
     display: flex;
     justify-content: center;
 }
-
 .footer-invite {
     padding-top: 59px;
 }
-
 .footer-invite-text {
     font-family: "Roboto";
     font-style: normal;
@@ -130,14 +117,10 @@
     margin: 0;
     margin-bottom: 20px;
 }
-
-.footer-invite-wrap {}
-
 .footer-invite-form {
     box-sizing: border-box;
     display: flex;
 }
-
 .footer-invite-input {
     margin-right: 12px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -151,7 +134,6 @@
     color: rgba(255, 255, 255, 0.75);
     box-sizing: border-box;
 }
-
 .invite-btn {
     width: 200px;
     height: 50px;
@@ -169,12 +151,10 @@
     border-radius: 4px;
     border: none;
 }
-
 .invite-btn:hover {
     background-color: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
 .invite-img {
     vertical-align: middle;
     margin-left: 9px;

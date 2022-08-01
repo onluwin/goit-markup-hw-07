@@ -1,12 +1,17 @@
+@import "./utils/vars";
 @import "./base/reset";
-@import "./vars";
+@import "./base/common";
 
-@import "./header";
-@import "./hero";
-@import "./peculiarities";
-@import "./about";
-@import "./team";
-@import "./regular";
-@import "./footer";
-@import "./portfoliomain";
-@import "./modal.scss"
+@import "./components/container";
+@import "./components/modal";
+@import "./components/social.scss";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/peculiarities";
+@import "./layout/about";
+@import "./layout/team";
+@import "./layout/regular";
+@import "./layout/footer";
+@import "./layout/portfoliomain";
+
