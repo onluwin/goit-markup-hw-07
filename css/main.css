@@ -53,6 +53,20 @@ li {
   pointer-events: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -229,6 +243,13 @@ li {
           align-items: center;
   margin-right: 8px;
   margin-bottom: 30px;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  margin: 0;
+  margin-bottom: 30px;
 }
 .modal__label-checkbox::before {
   content: "";
@@ -245,14 +266,6 @@ li {
   background-repeat: no-repeat;
   background-position: center;
 }
-.modal__checkbox-text {
-  font-family: "Roboto";
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-  margin: 0;
-}
 .modal__checkbox-link {
   font-family: "Roboto";
   font-style: normal;
@@ -263,6 +276,7 @@ li {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: var(--accent-color);
+  margin-left: 5px;
 }
 .modal__btnsubmit {
   width: 200px;
@@ -537,7 +551,11 @@ li {
 
 .hero {
   height: 600px;
-  background-image: url(../images/herobg.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4))), url(../images/herobg.png);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/herobg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1600px;
 }
 
 .hero-title {
@@ -1007,7 +1025,7 @@ li {
   margin-right: 93px;
 }
 
-.social__title {
+.social-container__title {
   padding-top: 60px;
   margin: 0;
   margin-bottom: 20px;
@@ -1024,7 +1042,7 @@ li {
 .invite {
   padding-top: 59px;
 }
-.invite__text {
+.invite__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;

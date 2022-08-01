@@ -166,6 +166,13 @@
             align-items: center;
             margin-right: 8px;
             margin-bottom: 30px;
+            font-family: "Roboto";
+                font-size: 14px;
+                line-height: 1.71;
+                letter-spacing: 0.03em;
+                color: var(--secondary-text-color);
+                margin: 0;
+                margin-bottom: 30px;
         }
     
         &__label-checkbox::before {
@@ -184,16 +191,7 @@
             background-repeat: no-repeat;
             background-position: center;
         }
-    
-        &__checkbox-text {
-            font-family: "Roboto";
-            font-size: 14px;
-            line-height: 1.71;
-            letter-spacing: 0.03em;
-            color: var(--secondary-text-color);
-            margin: 0;
-        }
-    
+        
         &__checkbox-link {
             font-family: "Roboto";
             font-style: normal;
@@ -203,6 +201,7 @@
             letter-spacing: 0.03em;
             text-decoration-line: underline;
             color: var(--accent-color);
+            margin-left: 5px;
         }
     
         &__btnsubmit {
